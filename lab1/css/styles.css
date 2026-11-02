@@ -5,6 +5,11 @@ body {
   line-height: 1.6; /* Set line height for better readability */
 }
 
+h1,
+h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
 header,
 nav,
 main,
