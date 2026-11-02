@@ -21,11 +21,6 @@ main {
   padding: 3rem 0; /* Space above and below the row */
 }
 
-main h2 {
-  width: 100%; /* Takes its own row above the photo and text */
-  margin: 0;
-}
-
 figure {
   margin: 0;
 }
@@ -65,4 +60,55 @@ footer {
 
 footer img {
   width: 200px;
+}
+
+#about-main {
+  display: block; /* Override the flex display for the about page */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+#about-main h2 {
+  margin-bottom: 2rem;
+}
+
+#table-header {
+  background-color: #700011;
+  color: #ffffff;
+}
+
+.table-row {
+  background-color: #1a1a1a;
+}
+
+table {
+  border-collapse: collapse; /* Collapse borders into a single border */
+  margin: 0 auto 2rem; /* Center the table and add space below */
+  width: 75%;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid #444444;
+  padding: 0.5rem; /* Add padding to cells for better readability */
+  text-align: left;
+}
+
+.interests {
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+.interest-item {
+  border-left: 4px solid #700011;
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
 }
