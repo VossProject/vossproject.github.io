@@ -21,6 +21,10 @@ main {
   padding: 3rem 0; /* Space above and below the row */
 }
 
+main h2 {
+  width: 100%; /* Takes its own row above the photo and text */
+}
+
 figure {
   margin: 0;
 }
@@ -111,4 +115,16 @@ td {
   background-color: #1a1a1a;
   padding: 0.5rem 1rem;
   margin-bottom: 0.75rem;
+}
+
+#contact-main {
+  display: block; /* Stack the text and form instead of using flex */
+}
+
+iframe {
+  display: block;
+  width: min(100%, 40rem);
+  min-height: 40rem;
+  margin: 0 auto;
+  border: 1px solid #444444;
 }
