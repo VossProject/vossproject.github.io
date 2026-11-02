@@ -1,10 +1,68 @@
 body {
   background-color: #000000;
-  color: #FFFFFF; /* Set text color to white for contrast */
+  color: #ffffff; /* Set text color to white for contrast */
   font-family: Arial, sans-serif;
   line-height: 1.6; /* Set line height for better readability */
 }
 
+header,
+nav,
+main,
+footer {
+  text-align: center;
+}
+
+main {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  padding: 3rem 0; /* Space above and below the row */
+}
+
+main h2 {
+  width: 100%; /* Takes its own row above the photo and text */
+  margin: 0;
+}
+
 figure {
   margin: 0;
+}
+
+figure img {
+  width: 300px;
+}
+
+main section {
+  max-width: 500px; /* Keeps the welcome text next to the photo */
+  text-align: left;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #700011;
+  text-decoration: none; /* Remove underline from links */
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #700011;
+}
+
+nav a.current {
+  color: #ffffff;
+  border-bottom: 3px solid #700011;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+footer img {
+  width: 200px;
 }
