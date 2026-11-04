@@ -1,0 +1,145 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+header,
+nav,
+footer {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #700011;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #700011;
+}
+
+nav a.current {
+  color: #ffffff;
+  border-bottom: 3px solid #700011;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+main h2 {
+  text-align: center;
+}
+
+figure {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #444444;
+  border-radius: 12px;
+}
+
+figure img.small {
+  max-width: 220px;
+  border: none;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+article {
+  margin-bottom: 2.5rem;
+}
+
+/* short underline under each heading, same as the current nav link */
+article h3 {
+  display: inline-block;
+  border-bottom: 3px solid #700011;
+  padding-bottom: 0.25rem;
+}
+
+aside {
+  font-weight: bold;
+  background-color: #700011;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* two columns on the everyday page */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.two-col article {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.two-col img {
+  display: block;
+  height: 80px;
+  margin-top: 1rem;
+}
+
+/* the ollama logo is black, so it needs a light tile */
+.two-col img.light-logo {
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.sources {
+  font-size: 0.9rem;
+}
+
+.sources a,
+figcaption a {
+  color: #ff6677;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  padding-bottom: 1rem;
+}
+
+footer img {
+  width: 200px;
+}
+
+/* stack the columns on small screens */
+@media (max-width: 700px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}

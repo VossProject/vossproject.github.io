@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Story | Open Source</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>OPEN SOURCE</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="everyday.html">Everyday Open Source</a>
+        <a href="contributing.html">Getting Involved</a>
+        <a href="my-story.html" class="current">My Story</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>My Open Source Story</h2>
+
+      <figure>
+        <img src="img/merged-pr.png" alt="My merged pull request on the LFortran GitHub page">
+        <figcaption>My first merged pull request, to LFortran</figcaption>
+      </figure>
+
+      <article>
+        <h3>CodePath AI301</h3>
+        <p>
+          This past summer I took CodePath's AI Open Source Capstone. The whole course
+          is one loop: find a real issue in a real open source project, fix it, get it
+          merged, then pick another one. We met every week in small groups for
+          standups, so there was always someone to ask when I got stuck.
+        </p>
+      </article>
+
+      <article>
+        <h3>Finding an issue</h3>
+        <p>
+          This was harder than I expected. I looked at around 60 issues before I found
+          one I could claim. Most of them already had someone working on a fix, even
+          when the issue looked open. I learned to check for open pull requests first,
+          before reading anything else.
+        </p>
+      </article>
+
+      <article>
+        <h3>My first merged fix</h3>
+        <p>
+          My first contribution was to LFortran, a compiler for the Fortran language.
+          It was accepting a line of code that should have been an error and quietly
+          ignoring part of it. I don't know Fortran, but the bug was really about
+          error handling, so I could still work on it. I added a check so the compiler
+          shows an error instead.
+        </p>
+        <p>
+          By the time my fix was ready, the main project had changed a lot, and I had
+          to update my copy and sort out conflicts before it could go in. The
+          maintainers merged it, and now my code is part of the project.
+        </p>
+      </article>
+
+      <article>
+        <h3>What I learned</h3>
+        <p>
+          Open source is as much about people as it is about code. You're working with
+          maintainers you've never met, so you read how the project does things,
+          introduce yourself when you claim an issue, and keep your pull request small
+          and easy to review.
+        </p>
+      </article>
+
+      <section class="sources">
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://www.codepath.org/">CodePath</a></li>
+          <li><a href="https://github.com/lfortran/lfortran/pull/12058">My merged pull request to LFortran</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mikey Voss. All rights reserved.</p>
+      <p>This site is for academic purposes only.</p>
+      <p>CST 336 Internet Programming.</p>
+      <img src="img/csumb-logo-white.svg" alt="CSUMB logo">
+    </footer>
+  </body>
+</html>
