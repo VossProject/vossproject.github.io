@@ -1,0 +1,78 @@
+body {
+  background-color: #700011;
+  background-image: url("../img/gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+header,
+#main {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  color: #700011;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #999999;
+  margin: 0;
+}
+
+h2 {
+  color: #333333;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+#playerGuess {
+  width: 60px;
+  font-size: 1.2em;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #700011;
+  border-radius: 5px;
+}
+
+#playerGuess:focus {
+  outline: none;
+  border-color: #a0001a;
+}
+
+button {
+  background-color: #700011;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 8px 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a0001a;
+}
+
+#feedback {
+  font-size: 1.3em;
+  font-weight: bold;
+  min-height: 1.5em;
+}
+
+#guesses {
+  font-style: italic;
+  color: #555555;
+}
