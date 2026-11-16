@@ -1,0 +1,159 @@
+body {
+  background-color: #700011;
+  background-image: url("../img/gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #ffffff;
+  color: #700011;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  line-height: 2.6;
+  color: #333333;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 200px;
+  font-size: 1em;
+  padding: 5px 8px;
+  border: 2px solid #700011;
+  border-radius: 5px;
+}
+
+#zip {
+  width: 100px;
+}
+
+input[type="radio"] {
+  accent-color: #700011;
+  margin-left: 10px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #a0001a;
+  box-shadow: 0 0 4px #a0001a;
+}
+
+select {
+  font-size: 1em;
+  padding: 5px;
+  border: 2px solid #700011;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+#county {
+  min-width: 220px;
+}
+
+#city,
+#latitude,
+#longitude {
+  color: #700011;
+  font-weight: bold;
+}
+
+#zipError,
+#usernameError,
+#passwordError {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+#suggestedPwd {
+  font-family: monospace;
+  font-weight: normal;
+  background-color: #f3e6e8;
+  padding: 3px 8px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  margin: 15px auto 0;
+  background-color: #700011;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a0001a;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.welcome {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome p {
+  color: #333333;
+  font-size: 1.2em;
+}
+
+a {
+  display: inline-block;
+  background-color: #700011;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #a0001a;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+  }
+}
