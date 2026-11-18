@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Earthquake Finder</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <h1>Earthquake Finder</h1>
+
+    <form id="searchForm">
+      <p class="intro">
+        Pick a date range and a minimum magnitude to see earthquakes from around
+        the world. The data comes from the USGS Earthquake API.
+      </p>
+
+      <label
+        >Start Date:
+        <input type="date" id="startDate" name="startDate" /> </label
+      ><br />
+      <label
+        >End Date: <input type="date" id="endDate" name="endDate" />
+      </label>
+      <span id="dateError"></span><br />
+
+      <label
+        >Minimum Magnitude:
+        <input type="text" id="minMag" name="minMag" placeholder="4.5" />
+      </label>
+      <span id="magError"></span><br />
+
+      <label
+        >Sort By:
+        <select id="orderBy" name="orderBy">
+          <option value="time">Newest first</option>
+          <option value="magnitude">Biggest first</option>
+        </select>
+      </label>
+
+      <button>Search</button>
+    </form>
+
+    <p id="summary"></p>
+    <div id="results"></div>
+
+    <footer>
+      <p>&copy; 2026 Mikey Voss. All rights reserved.</p>
+      <p>This site is for academic purposes only.</p>
+      <p>CST 336 Internet Programming.</p>
+      <img src="img/csumb-logo-white.svg" alt="CSUMB logo" width="200" />
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  background-color: #700011;
+  background-image: url("../img/gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #ffffff;
+  color: #700011;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  line-height: 2.6;
+  color: #333333;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  font-size: 1em;
+  padding: 5px 8px;
+  border: 2px solid #700011;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #a0001a;
+  box-shadow: 0 0 4px #a0001a;
+}
+
+#dateError,
+#magError {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+button {
+  display: block;
+  margin: 15px auto 0;
+  background-color: #700011;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a0001a;
+}
+
+.intro {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+#summary {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#results {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.quake {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.quake h3 {
+  margin: 0 0 10px;
+  color: #700011;
+}
+
+.strong {
+  background-color: #ffe3e6;
+}
+
+.quake a {
+  color: #700011;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
